@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ip"/>
+    <EditText
+        android:id="@+id/targetIp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="输入对方ip"
+        android:background="@color/white"/>
+   <androidx.appcompat.widget.AppCompatEditText
+       android:id="@+id/msg"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:hint="输入发送内容"
+       android:background="@color/white"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="sendMsg"
+        android:text="发送"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/rv"/>
+</LinearLayout>
